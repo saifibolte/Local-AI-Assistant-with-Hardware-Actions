@@ -58,7 +58,7 @@ unzip vosk-model-small-en-us-0.15.zip -d models/
 
 ---
 
-## 🚀 Usage
+## Usage
 
 ### Simulation Mode (no hardware required)
 ```bash
@@ -72,7 +72,7 @@ python main.py --model-path models/vosk-model-small-en-us-0.15 --mode rpi
 
 ---
 
-## 🎮 Voice Commands
+## Voice Commands
 
 | Command Example        | Action                           |
 |-------------------------|----------------------------------|
@@ -93,7 +93,7 @@ python main.py --model-path models/vosk-model-small-en-us-0.15 --mode rpi
 
 ---
 
-## 📦 Dependencies
+## Dependencies
 - [Vosk](https://alphacephei.com/vosk/) (speech recognition)
 - [Silero TTS](https://github.com/snakers4/silero-models) (text-to-speech)
 - [SoundDevice](https://python-sounddevice.readthedocs.io/)
