@@ -1,11 +1,11 @@
-# 🎙️ Raspberry Pi Voice Assistant
+# 🎙️ Local AI Assistant with hardware Actions
 
 This project is a **local voice assistant** for Raspberry Pi that can recognize speech, detect intents, and control hardware devices (Light, Fan, Servo) through GPIO.  
 It supports both **real Raspberry Pi GPIO** mode and **simulation mode** for testing without hardware.
 
 ---
 
-## 🏗️ System Architecture
+## System Architecture
 
 ![System Architecture](https://github.com/saifibolte/Local-AI-Assistant-with-Hardware-Actions/blob/adade25ce4ae1279b9fc54004dd00698f3e8d29a/figures/System%20Architecture.drawio.png)
 
@@ -24,7 +24,7 @@ It supports both **real Raspberry Pi GPIO** mode and **simulation mode** for tes
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 ```
 .
 ├── asr.py              # Speech-to-text (Vosk)
@@ -40,7 +40,7 @@ It supports both **real Raspberry Pi GPIO** mode and **simulation mode** for tes
 
 ---
 
-## ⚙️ Installation
+## Installation
 
 ### 1. Clone repo & install dependencies
 ```bash
@@ -84,18 +84,12 @@ python main.py --model-path models/vosk-model-small-en-us-0.15 --mode rpi
 
 ---
 
-## 🛠️ Hardware Setup (Raspberry Pi + L293D)
+## Hardware Setup (Raspberry Pi)
 
 - **GPIO Pin Map**:
   - `LIGHT` → GPIO 17
   - `FAN` → GPIO 27 (via L293D motor driver for DC motor)
   - `SERVO` → GPIO 18 (PWM)
-
-⚠️ Connect **fan (DC motor)** via L293D motor driver:
-- Pi GPIO 27 → L293D Input1  
-- Pi GND → L293D GND (common ground with motor PSU)  
-- Motor → L293D Output1/Output2  
-- External PSU (6–12V) → L293D Vcc2  
 
 ---
 
@@ -118,8 +112,3 @@ pip install vosk sounddevice torch RPi.GPIO
 - User: *"Turn on the fan"*  
 - Assistant: *"Okay, fan set to ON."*  
 - Fan (DC motor) spins up via **L293D motor driver**.  
-
----
-
-## 📜 License
-MIT License © 2025
