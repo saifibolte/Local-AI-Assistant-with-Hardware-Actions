@@ -7,7 +7,7 @@ It supports both **real Raspberry Pi GPIO** mode and **simulation mode** for tes
 
 ## 🏗️ System Architecture
 
-![System Architecture](System%20Architecture.drawio.png)
+![System Architecture](https://github.com/saifibolte/Local-AI-Assistant-with-Hardware-Actions/blob/adade25ce4ae1279b9fc54004dd00698f3e8d29a/figures/System%20Architecture.drawio.png)
 
 ### Flow:
 1. **User speaks** → Microphone captures audio.
