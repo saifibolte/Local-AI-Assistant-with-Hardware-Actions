@@ -1,4 +1,4 @@
-# 🎙️ Local AI Assistant with hardware Actions
+# Local AI Assistant with hardware Actions
 
 This project is a **local voice assistant** for Raspberry Pi that can recognize speech, detect intents, and control hardware devices (Light, Fan, Servo) through GPIO.  
 It supports both **real Raspberry Pi GPIO** mode and **simulation mode** for testing without hardware.
