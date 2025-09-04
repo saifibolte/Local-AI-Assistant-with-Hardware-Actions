@@ -1,0 +1,5 @@
+vosk
+torch
+sounddevice
+numpy
+RPi.GPIO
